@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+body {
+    background: -webkit-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -moz-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -ms-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -o-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    font-family: 'Open Sans', sans-serif!important;
+}
+.well{
+    background-color:#fff!important;
+    border-radius:0!important;
+    border:none!important;
+}
+
+.well.login-box {
+    width:500px;
+    margin:0 auto;
+    display:none;
+}
+
+.result-box {
+	width: 500px !important;
+	margin:0 auto;
+	margin-top: 70px;
+}
+
+.results b {
+	display: inline-block;
+	width: 90px;
+}
+
+.well.login-box legend, .result-box legend {
+  font-size:26px;
+  text-align:center;
+  font-weight:300;
+}
+.well.login-box label {
+  font-weight:300;
+  font-size:16px;
+  
+}
+.well.login-box input[type="text"], 
+.well.login-box input[type="password"],
+.well.login-box input[type="email"],
+.well.login-box input[type="url"],
+.well.login-box input[type="tel"],
+.well.login-box input[type="file"],
+.well.login-box select {
+  box-shadow:none;
+  border-color:#ddd;
+  border-radius:0;
+  outline: none;
+}
+
+.well.welcome-text{
+    font-size:21px;
+}
+
+/* Notifications */
+.notification{
+    position:fixed;
+    top: 20px;
+    right:0;
+    background-color:#FF4136;
+    padding: 20px;
+    color: #fff;
+    font-size:21px;
+    display:none;
+}
+.notification-success{
+  background-color:#3D9970;
+}
+
+.notification-show{
+    display:block!important;
+}
+
+/*Loged in*/
+.logged-in{
+  display:none;
+}
+.logged-in h1{
+  margin:0;
+  font-weight:300;
+}
+
+.clear {
+	clear: both;
+}

@@ -2,10 +2,6 @@
 // Home Controller
 include("models/views.php");
 $views = new views();
-
-// session_start();
-// $_SESSION["password"] = $_POST['password'];
-// echo md5($_SESSION['password']); 
         
 if(!empty($_GET["action"])){
 
