@@ -78,7 +78,7 @@
 							echo '<p><b>Address:</b> '.$data['tf_address'].', '.$data['tf_city'].', '.$data['select_state'].' '.$data['tf_zip'].'</p>';
 							echo '<p><b>Phone:</b> '.$data['tf_phone'].'</p>';
 							echo '</div>';
-							echo '<div class="form-group text-left"><a href="/ssl/Template/" class="btn btn-success btn-finished">Finished</a></div>';
+							echo '<div class="form-group text-left"><a href="index.php" class="btn btn-success btn-finished">Finished</a></div>';
 		                    
 		                    /* 
 							foreach($data as $key) {

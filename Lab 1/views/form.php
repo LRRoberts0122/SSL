@@ -124,7 +124,7 @@
 	                    
 	                    <div class="form-group text-right">
 	                        <button class="btn btn-danger btn-cancel-action">Cancel</button>
-	                        <input type="submit" class="btn btn-success btn-login-submit" value="Login" />
+	                        <input type="submit" class="btn btn-success btn-login-submit" value="Sign Up" />
 	                    </div>
 	                    </div>
 	                    
