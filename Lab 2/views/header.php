@@ -1,7 +1,12 @@
 <? 
-
-
-
+/*
+ *	==================================
+ *	PROJECT:	SSL - Lab 02
+ *	FILE:		views/header.php
+ *	AUTHOR: 	Lindsay Roberts
+ *	CREATED:	12/01/2014
+ *	==================================
+ */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +17,3 @@
 	<link rel="stylesheet" type="text/css" href="public/css/main.css">
 </head>
 <body>
-	
-	<!-- 
-    <a href="index.php">Home</a>
-    <a href="index.php?action=registerForm">register form</a> -->

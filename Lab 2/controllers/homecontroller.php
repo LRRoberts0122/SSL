@@ -1,11 +1,17 @@
 <?
-// Home Controller
+/*
+ *	==================================
+ *	PROJECT:	SSL - Lab 02
+ *	FILE:		controllers/homecontroller.php
+ *	AUTHOR: 	Lindsay Roberts
+ *	CREATED:	12/01/2014
+ *	==================================
+ */
+ 
+session_start();
+
 include("models/views.php");
 $views = new views();
-
-session_start();
-$_SESSION["password"] = $_POST['password'];
-// echo md5($_SESSION['password']); 
         
 if(!empty($_GET["action"])){
 
@@ -13,37 +19,30 @@ if(!empty($_GET["action"])){
         $views->getView("views/header.php");
         $views->getView("views/form.php");
         $views->getView("views/footer.php");
-    }
-    else if($_GET["action"] == "registerAction"){
-	    
-	    // VALIDATE RESULTS...
+    } else if($_GET["action"] == "registerAction"){	    
         $views->getView("views/header.php");
         
         $username = $_POST['tf_username'];
         $enc_pass = sha1($_POST['tf_password']);
-        
-		// $folder = "./uploads/";
-		// move_uploaded_file($HTTP_POST_FILES['file']['tmp_name'], $folder.$HTTP_POST_FILES['file']['name']);
-		
-		session_start();
+        		
 		$_SESSION['user'] = $username;
 		$_SESSION['encp'] = $enc_pass;
-		// $_SESSION['img'] = ???;
 		
-		/*
-echo '<p>'.$username.'</p>';
-		echo '<p>'.$enc_pass.'</p>';
-		echo '<img src="'.$uploadfile.'" />';
-*/
+		$uploaddir = './uploads/';
+		$uploadfile = $uploaddir . basename($_FILES['file']['name']);
+		
+		if(move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
+			$_SESSION['file'] = $_FILES['file']['name'];
+		} else {
+			$_SESSION['error'] = "There was an error uploading the file!";
+		}
 		
 		$views->getView('views/results.php');
-        // $data = $_POST;
-        
-        // $views->getView("views/results.php", $data);
-            
+		$views->getView("views/footer.php");   
     }else{
-    $views->getView("views/header.php");
-    
+		$views->getView("views/header.php");
+	    $views->getView("views/form.php");
+	    $views->getView("views/footer.php");
     }
     
 }else{

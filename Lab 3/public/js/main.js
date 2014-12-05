@@ -1,15 +1,16 @@
 /*
  *	==================================
- *	PROJECT:	SSL - Lab 01
+ *	PROJECT:	SSL - Lab 03
  *	FILE:		public/js/main.js
  *	AUTHOR: 	Lindsay Roberts
- *	CREATED:	11/30/2014
+ *	CREATED:	12/03/2014
  *	==================================
  */
 (function($) {
 	
 	function varticalCenterStuff() {
 	    $('.login-box').css('margin-top', "100px");
+	    $('.register-box').css('margin-top', "100px");
 	    $('.welcome-text').css('margin-top', "300px");
 	    $('.logged-in').css('margin-top', "100px");
 	}
@@ -36,43 +37,27 @@
 	
 	$('.btn-cancel-action').click(function(e){
 	    e.preventDefault();
-	    $(this).parent().parent().parent().parent().fadeOut(function(){
+	    $(this).parent().parent().parent().fadeOut(function(){
 	        $('.welcome-text').fadeIn();
 	    })
 	});
 	
-	$('.btn-login-submit').click(function(e){
+	$('.btn-register-submit').click(function(e){
 		e.preventDefault();
 		
 		var element = $(this).parent().parent().parent().parent();
 		
-		var fname = $('#tf_firstname').val();
-		var lname = $('#tf_lastname').val();
-		var email = $('#tf_email').val();
+		var username = $('#tf_username').val();
 		var password = $('#tf_password').val();
-		var website = $('#tf_website').val();
+		var file = $('#tf_file').val();
 		
-		var address = $('#tf_address').val();
-		var city = $('#tf_city').val();
-		var state = $('#select_state').val();
-		var zip = $('#tf_zip').val();
-		var phone = $('#tf_phone').val();
-		
-		console.log("First Name:", fname);
-		console.log("Last Name:", lname);
-		console.log("Email:", email);
-		console.log("Password:", password);
-		console.log("Website:", website);
-		console.log("Address:", address, city, state, zip);
-		console.log("Phone:", phone);
-		
-		if(fname == '' || lname == '' || email == '' || password == '' || website == '' || address == '' || city == '' || state == '' || zip == '' || phone == ''){
+		if(username == '' || password == '' || file == ''){
 			$('.notification.login-alert').removeClass('bounceOutRight notification-show animated bounceInRight');
 			$('.notification.login-alert').addClass('notification-show animated bounceInRight');
 			$('.notification.login-alert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			    setTimeout(function(){
-			        $('.notification.login-alert').addClass('animated bounceOutRight');
-			    }, 2000);
+				setTimeout(function(){
+				    $('.notification.login-alert').addClass('animated bounceOutRight');
+				}, 2000);
 			});
 		}else{
 			$('#registerForm').submit();
@@ -86,9 +71,12 @@
 			$('.notification.logged-out').addClass('notification-show animated bounceInRight');
 			$('.notification.logged-out').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 				setTimeout(function(){
-				    $('.notification.logged-out').addClass('animated bounceOutRight');
+					// $('.notification.logged-out').addClass('animated bounceOutRight');
+					
 				}, 2000);
-			}); 
+			});
+			
+			window.location.href = '/ssl/Lab%203/index.php';
 		});
 	});
 })(jQuery);

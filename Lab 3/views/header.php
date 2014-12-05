@@ -1,10 +1,10 @@
-<?
+<? 
 /*
  *	==================================
- *	PROJECT:	SSL - Lab 01
+ *	PROJECT:	SSL - Lab 03
  *	FILE:		views/header.php
  *	AUTHOR: 	Lindsay Roberts
- *	CREATED:	11/30/2014
+ *	CREATED:	12/03/2014
  *	==================================
  */
 ?>

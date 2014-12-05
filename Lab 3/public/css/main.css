@@ -1,9 +1,9 @@
 /*
  *	==================================
- *	PROJECT:	SSL - Lab 01
+ *	PROJECT:	SSL - Lab 03
  *	FILE:		public/css/main.css
  *	AUTHOR: 	Lindsay Roberts
- *	CREATED:	11/30/2014
+ *	CREATED:	12/03/2014
  *	==================================
  */
  
@@ -22,14 +22,14 @@ body {
     border:none!important;
 }
 
-.well.login-box {
-    width:560px;
+.well.login-box, .well.register-box {
+    width:300px;
     margin:0 auto;
     display:none;
 }
 
 .result-box {
-	width: 560px !important;
+	width: 300px !important;
 	margin:0 auto;
 	margin-top: 70px;
 }
@@ -39,34 +39,27 @@ body {
 	width: 90px;
 }
 
-form .section {
-	width: 250px !important;
-	float: left;
-}
-
-.section:nth-child(odd) {
-	margin-left: 20px !important;
-}
-
-.well.login-box legend, .result-box legend {
+.well.login-box legend, .well.register-box legend, .result-box legend {
   font-size:26px;
   text-align:center;
   font-weight:300;
 }
-.well.login-box label {
+.well.login-box label, .well.register-box label {
   font-weight:300;
   font-size:16px;
   
 }
-.well.login-box input[type="text"], 
-.well.login-box input[type="password"],
-.well.login-box input[type="email"],
-.well.login-box input[type="url"],
-.well.login-box input[type="tel"],
-.well.login-box select {
+.well input[type="text"], 
+.well input[type="password"],
+.well input[type="email"],
+.well input[type="url"],
+.well input[type="tel"],
+.well input[type="file"],
+.well select {
   box-shadow:none;
   border-color:#ddd;
-  border-radius:0 !important;
+  border-radius:0;
+  outline: none;
 }
 
 .well.welcome-text{
@@ -92,15 +85,27 @@ form .section {
     display:block!important;
 }
 
-/*Loged in*/
-.logged-in{
-  display:none;
-}
+/*Logged in*/
 .logged-in h1{
-  margin:0;
   font-weight:300;
+  margin: 0;
+  line-height: 50px;
 }
 
 .clear {
 	clear: both;
+}
+
+.avatar {
+	margin-right: 15px;
+	display: inline-block;
+	float: left;
+	background-position: center center !important;
+	background-size: 80px !important;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }

@@ -1,4 +1,12 @@
-<? 
+<?
+/*
+ *	==================================
+ *	PROJECT:	SSL - Lab 01
+ *	FILE:		views/results.php
+ *	AUTHOR: 	Lindsay Roberts
+ *	CREATED:	11/30/2014
+ *	==================================
+ */
 ?>
 <div class="container">
     <div class="row">
@@ -52,7 +60,14 @@
 								echo '<p>Your <u>website url</u> is required.</p>';
 							}
 							
-							if(!isset($data['tf_address']) || !isset($data['tf_city']) || !isset($data['select_state']) || !isset($data['tf_zip']) || $data['tf_address'] == '' || $data['tf_city'] == '' || $data['select_state'] == '' || $data['tf_zip'] == '') {
+							if(!isset($data['tf_address']) || 
+							   !isset($data['tf_city']) || 
+							   !isset($data['select_state']) || 
+							   !isset($data['tf_zip']) || 
+							   $data['tf_address'] == '' || 
+							   $data['tf_city'] == '' || 
+							   $data['select_state'] == '' || 
+							   $data['tf_zip'] == '') {
 								echo '<p>Your <u>full address</u> is required.</p>';
 							}
 							
@@ -92,7 +107,6 @@
 							}
 							*/
 	                  }
-	            
 	                ?>
         	</div>
     	</div>

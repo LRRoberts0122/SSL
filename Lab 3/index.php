@@ -1,12 +1,11 @@
 <?
 /*
  *	==================================
- *	PROJECT:	SSL - Lab 02
+ *	PROJECT:	SSL - Lab 03
  *	FILE:		index.php
  *	AUTHOR: 	Lindsay Roberts
- *	CREATED:	12/01/2014
+ *	CREATED:	12/03/2014
  *	==================================
  */
-
 include("controllers/homecontroller.php");
 ?>
