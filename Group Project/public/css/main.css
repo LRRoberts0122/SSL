@@ -1,0 +1,163 @@
+/*
+ *	==================================
+ *	PROJECT:	SSL - Lab 03
+ *	FILE:		public/css/main.css
+ *	AUTHOR: 	Lindsay Roberts
+ *	CREATED:	12/03/2014
+ *	==================================
+ */
+ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+body {
+    background: -webkit-linear-gradient(90deg, #D84980 10%, #eda1ad 90%);
+    background: -moz-linear-gradient(90deg, #D84980 10%, #eda1ad 90%);
+    background: -ms-linear-gradient(90deg, #D84980 10%, #eda1ad 90%);
+    background: -o-linear-gradient(90deg, #D84980 10%, #eda1ad 90%);
+    background: linear-gradient(90deg, #D84980 10%, #eda1ad 90%);
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+.well{
+    background-color:#fff!important;
+    border-radius:0!important;
+    border:none!important;
+    width:560px;
+    margin:0 auto;
+}
+
+.well img {
+	padding: 10px;
+}
+
+.well legend {
+  font-size:26px;
+  text-align:center;
+  font-weight:300;
+}
+.well label {
+  font-weight:300;
+  font-size:16px;
+  
+}
+.well input[type="text"], 
+.well input[type="password"],
+.well input[type="email"],
+.well input[type="url"],
+.well input[type="tel"],
+.well input[type="file"],
+.well select {
+  box-shadow:none;
+  border-color:#ddd;
+  border-radius:0;
+  outline: none;
+}
+
+.well.welcome-text{
+    font-size:21px;
+}
+
+/* Notifications */
+.notification{
+    position:fixed;
+    top: 20px;
+    right:0;
+    background-color:#FF4136;
+    padding: 20px;
+    color: #fff;
+    font-size:21px;
+    display:none;
+}
+
+.notification-success{
+  background-color:#3D9970;
+}
+
+.notification-show{
+    display:block!important;
+}
+
+/*Logged in*/
+.logged-in h1{
+  font-weight:300;
+  margin: 0;
+  line-height: 50px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* CUSTOM */
+#home-search {
+    background: rgba(188,47,101,.5);
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+#home-search input {
+	width: 630px;
+	height: 50px;
+	font-size: 26px;
+	font-weight: lighter;
+	margin-right: 0px;
+	border: none;
+	outline: none !important;
+}
+
+#home-search input:focus {
+	outline: none !important;
+}
+
+#home-search #btn-search {
+	background: none !important;
+	border: none;
+	color: #D84980;
+	position: absolute;
+	right: 15px;
+	top: 18px;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	color: #FFF;
+	text-shadow: 2px 3px 0px rgba(188, 47, 101, .5);
+	font-size: 72px;
+}
+
+.container {
+	margin: 50px auto;
+}
+
+.login-box {
+	float: left;
+	width: 250px;
+}
+
+.results-box {
+	float: left;
+}
+
+#search-container {
+	width: 650px;
+	margin: 0 auto !important;
+	margin-top: 15% !important;
+	text-align: center;
+}
+
+form p {
+	font-weight: lighter;
+}
+
+.btn-follow {
+	float: right;
+}
+
+#save-search-form {
+	display: inline !important;
+}
+
+
+#registerForm {
+	display: none;
+}
