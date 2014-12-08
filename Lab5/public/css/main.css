@@ -1,0 +1,156 @@
+/*
+ *	==================================
+ *	PROJECT:	SSL - Lab 03
+ *	FILE:		public/css/main.css
+ *	AUTHOR: 	Lindsay Roberts
+ *	CREATED:	12/03/2014
+ *	==================================
+ */
+ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+body {
+    background: -webkit-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -moz-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -ms-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: -o-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+    font-family: 'Open Sans', sans-serif!important;
+}
+.well{
+    background-color:#fff!important;
+    border-radius:0!important;
+    border:none!important;
+    width: 350px;
+    margin:0 auto;
+    margin-top: 100px;
+}
+
+.left {
+	width: 160px;
+	float: left;
+	margin-right: 50px;
+}
+.right {
+	width: 80px;
+	float: left;
+	padding-top: 20px;
+}
+
+.temp {
+	font-size: 80px;
+	font-weight: bold;
+}
+.results b {
+	display: inline-block;
+	width: 90px;
+}
+
+.well.login-box legend, .well.register-box legend, .result-box legend {
+  font-size:26px;
+  text-align:center;
+  font-weight:300;
+}
+.well.login-box label, .well.register-box label {
+  font-weight:300;
+  font-size:16px;
+  
+}
+.well input[type="text"], 
+.well input[type="password"],
+.well input[type="email"],
+.well input[type="url"],
+.well input[type="tel"],
+.well input[type="file"],
+.well select {
+  box-shadow:none;
+  border-color:#ddd;
+  border-radius:0;
+  outline: none;
+}
+
+.well.welcome-text{
+    font-size:21px;
+}
+
+/* Notifications */
+.notification{
+    position:fixed;
+    top: 20px;
+    right:0;
+    background-color:#FF4136;
+    padding: 20px;
+    color: #fff;
+    font-size:21px;
+    display:none;
+}
+.notification-success{
+  background-color:#3D9970;
+}
+
+.notification-show{
+    display:block!important;
+}
+
+/*Logged in*/
+.logged-in h1{
+  font-weight:300;
+  margin: 0;
+  line-height: 50px;
+}
+
+.clear {
+	clear: both;
+}
+
+.avatar {
+	margin-right: 15px;
+	display: inline-block;
+	float: left;
+	background-position: center center !important;
+	background-size: 80px !important;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+table {
+	width: 100% !important;
+}
+
+tr {
+	border-bottom: 1px double #ddd !important;
+	margin: 5px;
+}
+
+td, th {
+	padding: 0 15px;
+}
+
+.roster {
+	margin: 0px 0px 10px 0;
+	font-weight: lighter;	
+}
+
+.pull-right .btn-account {
+	margin-right: 10px;
+}
+
+table span {
+	float: right;
+}
+
+.table-img {
+	background-position: center center;
+	background-size: 55px;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+}
+
+td p, td a, td a span {
+	line-height: 35px !important;
+	margin-bottom: 0;
+}
