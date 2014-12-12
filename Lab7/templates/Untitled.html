@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Skeleton</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script>
+		(function($) {
+			$.getJSON('http://api.locu.com/v1_0/menu_item/search/?api_key=36422c5789f9d5868ad452f4f6f5162a04891f5e&name=beer&locality=San+Francisco&country=United+States&region=CA&price__gte=6.0&location=37.78%2C+-122.42', function (data) {
+			alert(data);
+});
+		})(jQuery);
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>Header</header>
+		<nav>Nav</nav>
+
+		<section id="content">
+			<article>Article</article>
+		</section>
+		
+		<aside>Sidebar</aside>
+		
+		<footer>Footer</footer>
+	</div>   
+</body>
+</html>
