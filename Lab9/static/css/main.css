@@ -1,0 +1,91 @@
+body {
+	background:
+	url('http://subtlepatterns.com/patterns/cream_dust.png');
+}
+
+.text-center {
+	width: 120px !important;
+	margin-right: 50px;
+}
+
+figure div {
+	background-position: center center !important;
+	background-size: 182px !important;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+
+.clear {
+	clear: both;
+}
+
+span.tags {
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+.my-account, .logout, .btn-edit-users {
+	float: right;
+}
+
+.my-account, .btn-edit-users {
+	margin-right: 5px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  font-size: 100px !important;
+  text-align: right !important;
+  filter: alpha(opacity=0) !important;
+  opacity: 0 !important;
+  background: red !important;
+  cursor: inherit !important;
+  display: block !important;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.glyphicon-cloud-upload {
+	padding-top: 1px;
+}
+
+.dropdown-user:hover {
+	cursor: pointer;
+}
+
+.resize {
+	height: 40px;
+	width: 40px;
+}
+
+.profile-title {
+	display: inline-block;
+	width: 150px;
+}
+
+.user-row {
+	margin: 10px 0;
+}
+
+.dropdown-user {
+	margin-top: 10px;
+}

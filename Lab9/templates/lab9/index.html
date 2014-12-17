@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Python Demo</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/../../static/css/main.css" />
+</head>
+<body>
+<br><br>
+<div class="container">
+<div class="well col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2"> 
+    <form role="form" action="/login" method="POST">
+		<fieldset>
+			<h2>Please Sign In</h2>
+			<hr>
+			{% if message %}
+				<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> {{ message }}</div>
+			{% endif %}
+			<div class="form-group">
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+			</div>
+			<div class="form-group">
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+			</div>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<a href="/signup" class="btn btn-lg btn-primary btn-block">Need an Account? Sign Up!</a>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
