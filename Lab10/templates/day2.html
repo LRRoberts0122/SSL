@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>SSL - Lab 8</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<form style="width: 300px;" action="/login" method="POST">
+			{% if session["error"] %}
+				<div class="alert alert-danger" role="alert"><b>Warning!</b> {{session["error"]}}</div>
+			{% endif %}
+			<div class="input-group" style="margin: 20px;">
+				<span class="input-group-addon">Username</span>
+				<input type="text" class="form-control" placeholder="Username" name="tf_username">
+			</div>
+			
+			<div class="input-group" style="margin: 20px;">
+				<span class="input-group-addon">Password</span>
+				<input type="password" class="form-control" placeholder="Password" name="tf_password">
+			</div>
+			
+			<button type="submit" style="margin: 0 20px;" class="btn btn-success">Login</button>
+		</form>
+	</div>
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

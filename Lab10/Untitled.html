@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Skeleton</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css" />
+<!-- 	<link rel="stylesheet" type="text/css" href="../static/css/user.css" /> -->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		body {
+			background:
+			url('http://subtlepatterns.com/patterns/cream_dust.png');
+		}
+	</style>
+</head>
+<body>
+<br>
+<div class="container">
+<div class="well col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2"> 
+	<h2>Welcome, {{data['username']}} <a href="/logout" class="btn btn-danger logout"><span class="glyphicon glyphicon-off"></a> <a href="/admin/users" class="btn btn-primary btn-edit-users">Edit Users</a></h2>
+	<hr>
+	
+	
+	<div class="col-xs-12 col-sm-4 text-center">
+        <figure>
+    		<div style="background-image: url('{{ data["avatar"] }}');" alt="profile image">
+        </figure>
+    </div>
+    <div class="col-xs-12 col-sm-8 right">
+        <p><strong>{{data['firstname']}} {{data['lastname']}}</strong><br/>
+        <strong><i class="fa fa-envelope"></i> </strong> {{ data['email'] }} </p>
+        <p><strong>Password:</strong><br/>
+        <span class="tags">{{ data['password'] }}</span></p>
+    </div>
+</div>
+</div>
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../static/js/main.js"></script>
+</body>
+</html>

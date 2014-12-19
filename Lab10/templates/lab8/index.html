@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>SSL - Lab 8</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		#wrapper {
+			width: 300px;
+			margin: 0 auto;
+			margin-top: 160px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			padding-bottom: 20px;
+		}
+		
+		h1, .input-group {
+			margin: 20px;
+		}
+		
+		.btn, .alert {
+			margin-left: 20px;
+		}
+		
+		.alert {
+			width: 260px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<form style="width: 300px;" action="/login" method="POST">	
+			<h1>Login</h1>		
+			{% if message %}
+				<div class="alert alert-danger" role="alert"><b>Warning!</b> {{ message }}</div>
+			{% endif %}
+			
+			<div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+				<input type="text" class="form-control" placeholder="Email Address" name="tf_email">
+			</div>
+			
+			<div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+				<input type="password" class="form-control" placeholder="Password" name="tf_password">
+			</div>
+			
+			<button type="submit" class="btn btn-success">Login</button>
+		</form>
+	</div>
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

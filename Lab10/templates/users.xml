@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	{% for user in data: %}
+		<user>
+			<username>{{user[1]}}</username>
+			<firstname>{{user[2]}}</firstname>
+			<lastname>{{user[3]}}</lastname>
+		</user>
+	{% endfor %}
+</users>

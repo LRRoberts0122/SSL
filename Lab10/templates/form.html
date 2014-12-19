@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Skeleton</title>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/main.css" />
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <h2>Python Forms - SSL Lab 7</h2>
+        <p class="lead">
+            Please login or register an account to access the app!<br />
+        </p>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h4 class="page-header">Register</h4>
+                <form role="form" enctype="multipart/form-data" action="/register" method="POST">
+	                {% if error %}
+	                	<div class="alert alert-danger" role="alert"><b>Warning!</b> {{error}}</div>
+	                {% endif %}
+	                
+	                <div class="form-group float-label-control">
+                        <label for="tf_name">Your Name</label>
+                        <input name="tf_name" type="text" class="form-control" placeholder="What's your name?">
+                    </div>
+	                
+                    <div class="form-group float-label-control">
+                        <label for="tf_email">Email Address</label>
+                        <input name="tf_email" type="email" class="form-control" placeholder="What's your email address?">
+                    </div>
+                    
+                    <div class="form-group float-label-control">
+                        <label for="tf_password">Password</label>
+                        <input name="tf_password" type="password" class="form-control" placeholder="Create a super-secret password.">
+                    </div>
+                    
+                    <!-- image-preview-filename input [CUT FROM HERE]-->
+		            <div class="input-group image-preview float-label-control">
+			            	<label for="input-file-preview">Your Picture</label>	            
+							<input type="text" class="form-control image-preview-filename" disabled="disabled" placeholder="Your Awesome"> 
+		                <!-- don't give a name === doesn't send on POST/GET -->
+		                
+		                <span class="input-group-btn">
+		                    <!-- image-preview-clear button -->
+		                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+		                        <span class="glyphicon glyphicon-remove"></span> Clear
+		                    </button>
+		                    <!-- image-preview-input -->
+		                    <div class="btn btn-default image-preview-input">
+		                        <span class="glyphicon glyphicon-folder-open"></span>
+		                        <span class="image-preview-input-title">Browse</span>
+		                        <input type="file" accept="image/png, image/jpeg, image/gif" name="tf_picture" /> <!-- rename it -->
+		                    </div>
+		                </span>
+		            </div><!-- /input-group image-preview [TO HERE]-->
+		            
+		            <button type="submit" class="btn btn-lg btn-success" id="btn-register">Sign Up!</button>
+                </form>
+
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Requirements
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Create a Form View</li>
+                            <li>Create a Display View</li>
+                            <li>Display Form Results</li>
+                            <li>Upload and Display an Image</li>
+                            <li>Hash and Display Password Variables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>

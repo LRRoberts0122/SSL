@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Skeleton</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/user.css" />
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style>
+			.btn {
+				float: left;
+			}
+			.buttons {
+				float: right;
+				margin-left: 100px;
+			}
+			p {
+				clear: both;
+				line-height: 32px;
+			}
+			
+			
+	</style>
+</head>
+<body>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+	    	 <div class="well profile">
+	            <div class="col-sm-12">
+		            <h2>Edit Users</h2>
+					{% for user in data %}
+						<p>{{ user[1] }} 
+							<span class="buttons">
+								<a href="/admin/users/edit/{{user[0]}}"><button class="btn btn-default" style="margin-right: 5px;">Edit</button></a>
+								<a href="/admin/users/delete/{{user[0]}}"><button class="btn btn-danger">Delete</button></a>
+							</span>
+						</p>
+					{% endfor %}
+	            </div>          
+	    	 </div>                 
+			</div>
+		</div>
+	</div> 
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../static/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Skeleton</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+	<div id="wrapper">
+		{% for user in data %}
+			<p>{{ user[1] }} | <a href="/admin/users/edit/{{user[0]}}">Edit</a> | <a href="/admin/users/delete/{{user[0]}}">Delete</a></p>
+		{% endfor %}
+	</div>
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+-->
